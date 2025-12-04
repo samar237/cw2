@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+   
+}
+:root {
+    --accent: #6b2727;
+    --accent-2: #d64545;
+    --muted: #a59696;
+    --max-width: auto;
+    --radius: 8px;
+} 
+/* ===== HEADER ===== */
+#brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-height: 110px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: rgb(59, 52, 41);
+    font-weight: bold;
+}
+
+header {
+    position : sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(172, 24, 24, 0.15);
+}
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: rgb(83, 54, 10);
+    font-size: 1.5rem;
+    font-weight : bold;
+}
+
+.logo{
+    height: 200px;
+    width: 200px;
+    background: transparent;
+    border-radius: var(--radius);
+    object-fit: cover;
+    filter : drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+
+}
+nav.primary {
+    display: flex;
+    gap: 1.5rem;
+}
+nav.primary a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+/* ===== HERO ===== */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      color: #fff;
+      position: relative;
+      padding: 6rem 1rem;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max-width);
+      margin: auto;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.6rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 700px;
+      margin: 0 auto 1.6rem;
+    }
+.hero .btn {
+      background: var(--accent-2);
+      color: #fff;
+      padding: .8rem 1.4rem;
+      border-radius: 10px;
+      font-weight: 700;
+      display: inline-block;
+      transition: background .3s ease;
+    }
+    .hero .btn:hover { background: #e1c4c4; }
+
+    /* ===== SECTION BASE ===== */
+    section { padding: 3rem 0; }
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: .5rem;
+      text-align: center;
+    }
+    .section-header p {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+ /* ===== GRID CARDS ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+      background: #fff;
+      padding: 1.4rem;
+      border-radius: var(--radius);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      transition: transform .3s, box-shadow .3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+    .card h3 { margin-bottom: .5rem; color: var(--accent); }
+    .muted { color: var(--muted); }
+
+ /* ===== LOCATIONS ===== */
+    .locations-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: .8rem;
+    }
+    .locations-list li {
+      background: #f8f8f8;
+      padding: .9rem;
+      border-radius: 10px;
+      border: 1px dashed #ccc;
+      text-align: center;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 1.4rem;
+      align-items: start;
+      margin-top: 1.5rem;
+    }
+    label { display:block; font-weight:600; margin-bottom:.4rem; }
+    input, textarea {
+      width:100%; border:1px solid #ccc; border-radius:8px;
+      padding:.6rem; font-size:1rem; margin-bottom:.9rem;
+    }
+    button[type="submit"] {
+      background: var(--accent-2); color:#fff; font-weight:700;
+      border:none; border-radius:8px; padding:.7rem 1.2rem; cursor:pointer;
+    }
+    button:hover { background:#b12626; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      border-top: 1px solid #eee;
+      text-align: center;
+      padding: 1.5rem 0;
+      color: var(--muted);
+      font-size: .9rem;
+      margin-top: 3rem;
+    }
