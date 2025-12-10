@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ULSTERICA ® | Future Luxe Fashion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">ULSTERICA</div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="glitch" data-text="FUTURE LUXE">FUTURE LUXE</h1>
+      <p class="tagline">Engineered for the bold. Designed for eternity. And lives like a luxury</p>
+      <a href="#collection" class="cta">Discover Collection</a>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section id="collection" class="collection">
+    <h2>Signature Collection 2025</h2>
+    <div class="grid">
+
+      <div class="product" data-name="Anup shoes" data-price="335">
+        <div class="img" style="background-image:url('shoes.jpg')"></div>
+        <div class="info">
+          <h3>Anup shoes</h3>
+          <p>calfskin, suede, patent</p>
+          <span class="price">$335</span>
+          <button class="add">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Void Hoodie" data-price="230">
+        <div class="img" style="background-image:url('hoddie.jpg')"></div>
+        <div class="info">
+          <h3>Void Hoodie</h3>
+          <p>heavyweight cotton fleece, French terry, and premium cotton-polyester blends</p>
+          <span class="price">$230</span>
+          <button class="add">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Cargo" data-price="160">
+        <div class="img" style="background-image:url('cargo.jpg')"></div>
+        <div class="info">
+          <h3>Cargo</h3>
+          <p>Cordura® Fabric, cotton Twill, Spandex or Elastane Blends</p>
+          <span class="price">$160</span>
+          <button class="add">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Eclipse Jacket" data-price="529">
+        <div class="img" style="background-image:url('jacket.jpg')"></div>
+        <div class="info">
+          <h3>Eclipse Jacket</h3>
+          <p>Lambskin leather • Carbon armor plates</p>
+          <span class="price">$529</span>
+          <button class="add">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>Beyond Fashion. Beyond Time.</h2>
+    <p>Berlin imagination. Tokyo precision. London distinction. ULSTERICA is luxury engineered for tomorrow.<br>We don’t follow trends — we terminate them.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+      <div class="left">
+        <p><strong>Email:</strong> hello@ulsterica.com.uk</p>
+        <p><strong>Phone:</strong> +44</p>
+        <p><strong>Showroom:</strong> Ulster London</p>
+      </div>
+      <form id="contact-form">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CART MODEL -->
+  <div id="cart" class="cart-modal">
+    <div class="overlay"></div>
+    <div class="panel">
+      <button id="close">×</button>
+      <h2>Cart (<span id="cart-count2">0</span>)</h2>
+      <div id="cart-list"></div>
+      <div class="total">Total: $<span id="total">0.00</span></div>
+      <button id="checkout">Complete Order</button>
+      <button id="order-message">Order via Message</button>
+      <div id="success" class="success">Order Complete! Thank you!</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
